@@ -1,0 +1,86 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Albert Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.App {
+  position: relative;
+}
+
+.add-form {
+  margin: 2rem;
+  margin-top: 5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #1358db;
+}
+
+label,
+input,
+button,
+select {
+  display: block;
+  width: 450px;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input[type="text"]:disabled {
+  background: #eee;
+}
+
+input,
+select {
+  background: white;
+  padding: 5px;
+  padding-left: 20px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 30px;
+  border: 2px solid black;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #1358db;
+}
+
+button {
+  color: black;
+  margin-top: 20px;
+  background: #ffcf00;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__add-form {
+    margin: 2rem;
+  }
+}
